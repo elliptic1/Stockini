@@ -1,0 +1,24 @@
+<div class="large-12 columns">
+    <h4>Stockini.com is a family business.</h4>
+</div>
+
+
+<!-- Check for Zepto support, load jQuery if necessary -->
+<script>
+    {% load staticfiles %}
+
+    document.write('<script src={% static "js/vendor/" %}'
+            + ('__proto__' in {} ? 'zepto' : 'jquery')
+            + '.js><\/script>');
+</script>
+
+<script src="{% static 'js/foundation/foundation.js' %}"></script>
+<script src="{% static 'js/foundation/foundation.topbar.js' %}"></script>
+
+<script>
+    $(document).foundation();
+</script>
+
+</body>
+
+</html>
