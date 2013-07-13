@@ -1,0 +1,4 @@
+Stockini
+========
+
+Stockini django project
